@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex"><meta name="description" content="Datenschutzhinweise zu TrainLog, Google-Anmeldung, Cloud-Sicherungen und Strava.">
+  <title>Datenschutz – TrainLog</title>
+  <link rel="icon" href="logo.png" type="image/png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header wrap"><a class="brand" href="index.html" aria-label="TrainLog Startseite"><img src="logo.png" alt="" width="48" height="48"><span>TrainLog</span></a><nav aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="#kontakt">Kontakt</a></nav></header>
+  <main id="inhalt" class="legal wrap">
+    <p class="eyebrow">Deine Daten in TrainLog</p><h1>Datenschutz</h1><p class="meta">Entwurf vom 24. November 2026 · Grundlage: TrainLog 1.25.0</p>
+    <aside class="draft-note"><p><strong>Entwurf zur Prüfung.</strong> Die technischen Abläufe sind aus dem App-Projekt beschrieben. Vor der Verwendung als finale Datenschutzerklärung müssen insbesondere Anbieterangaben, Rechtsgrundlagen für Onlinefunktionen und Gesundheitsdaten sowie Speicherfristen und Übermittlungsbedingungen der Dienstleister abschließend ergänzt werden. Diese Fassung ist noch nicht für die Einreichung bei Google bestimmt.</p></aside>
+    <h2 id="kontakt">Verantwortlicher und Kontakt</h2>
+    <p>TrainLog ist ein persönliches Projekt von Thomas Schober. Vorgesehener Kontakt: <a href="mailto:thomasschober1984@gmail.com">thomasschober1984@gmail.com</a>. Die für den öffentlichen Betrieb geltenden vollständigen Anbieter- und Kontaktangaben sind vor der finalen Freigabe zu bestätigen.</p>
+    <h2>Welche Daten TrainLog verarbeitet</h2>
+    <p>TrainLog dokumentiert Trainingseinheiten, Übungen, Vorlagen, Sätze, Wiederholungen, Gewichte, Zeiten und weitere gewählte Messwerte. Hinzu kommen freiwillig eingetragene Notizen, Profilangaben und Körpermesswerte. Bei entsprechender Nutzung können Herzfrequenzaufzeichnungen und daraus abgeleitete Trainingswerte enthalten sein. Körper- und Herzfrequenzdaten können Gesundheitsdaten sein.</p>
+    <p>Die Trainingsfunktionen speichern ihre Daten zunächst auf deinem Gerät. Die Website selbst bietet weder einen Login noch Eingabeformulare und liest keine Trainingsdaten aus deiner App.</p>
+    <h2>Profilkonto und Google-Anmeldung</h2>
+    <p>Für Onlinefunktionen verwendet TrainLog Supabase als Anmelde- und Serverdienst. Ein Konto kann per E-Mail oder über die eingerichtete Google-Anmeldung genutzt werden. Dabei werden Kontokennungen, die E-Mail-Adresse und gegebenenfalls von Google bereitgestellte Basisprofilinformationen für die Anmeldung verarbeitet. Das Google-Passwort wird auf Googles Anmeldeseite eingegeben und nicht an TrainLog übermittelt.</p>
+    <p>Bei angemeldetem Profil werden Profilangaben auch an den TrainLog-Onlinedienst übertragen. Er speichert außerdem Verbindungseinstellungen, den gewählten Sicherungsrhythmus, Informationen zum letzten Backup und die für freigegebene Dienste notwendigen Zugangstokens.</p>
+    <h2>Google Drive: Zugriff, Verwendung und Speicherung</h2>
+    <p>Die Drive-Verbindung wird gesondert von dir freigegeben. TrainLog verwendet die Berechtigung <code>drive.appdata</code>, um eigene Sicherungsdateien im versteckten App-Datenbereich deines Google Drive anzulegen und zur Wiederherstellung oder zum Abgleich wieder zu lesen. Diese Berechtigung gewährt keinen allgemeinen Zugriff auf deine sonstigen Drive-Dateien, E-Mails, Kontakte oder Fotos.</p>
+    <p>Eine Sicherung kann Übungen, Vorlagen, Trainings einschließlich vorhandener Herzfrequenzdaten, ein offenes Training, Profil- und Körperdaten sowie zugehörige Einstellungen und technische Metadaten enthalten. Foto- und Videodateien sind nicht Bestandteil der JSON-Sicherungen.</p>
+    <p>Die Sicherungsinhalte werden beim Hochladen und Wiederherstellen über den TrainLog-Onlinedienst verarbeitet und im gewählten Google-Drive-Konto abgelegt. Im Onlinedienst werden zusätzlich Dateiverweise und Sicherungsmetadaten gespeichert. Neue Sicherungen werden als eigene Dateien angelegt; ältere Sicherungen werden derzeit nicht automatisch entfernt.</p>
+    <p>Die Google-Zugangstokens werden im Onlinedienst verschlüsselt gespeichert. Ein Erneuerungstoken ermöglicht die von dir aktivierte Sicherung, ohne bei jedem Vorgang erneut ein Google-Passwort einzugeben. Die beschriebenen Backups sind dadurch nicht automatisch Ende-zu-Ende-verschlüsselt.</p>
+    <h2>Andere optionale Verbindungen</h2>
+    <p><strong>OneDrive:</strong> Bei entsprechender Freigabe werden Sicherungen im eigenen App-Ordner deines Microsoft-Kontos gespeichert und gelesen. Die Verarbeitung über den TrainLog-Onlinedienst entspricht dem oben beschriebenen Sicherungsablauf.</p>
+    <p><strong>Strava:</strong> Eine Übertragung erfolgt, wenn du sie für ein abgeschlossenes Training startest. Dabei werden die für den Upload aufbereiteten Trainingsinformationen, Zeiten, Übungszuordnungen, Leistungswerte und gegebenenfalls Herzfrequenzdaten an Strava gesendet. Dort gelten deine Strava-Sichtbarkeitseinstellungen. Im TrainLog-Onlinedienst werden Upload- und Aktivitätskennungen gespeichert, um den Status zu prüfen und Mehrfachübertragungen zu vermeiden.</p>
+    <h2>Zwecke und Empfänger</h2>
+    <p>Die Verarbeitung dient der Dokumentation und Auswertung deines Trainings, der Profilanmeldung, der von dir gewählten Sicherung und Wiederherstellung sowie gewünschten Strava-Übertragungen. Beteiligte Dienste sind – je nach Nutzung – Supabase, Google, Microsoft und Strava.</p>
+    <p>Für die finale Erklärung sind die konkret eingesetzten Vertragsgesellschaften, Auftragsverarbeitungsvereinbarungen, Speicherregionen und gegebenenfalls Garantien für Drittlandübermittlungen anhand der Betreiberkonten zu ergänzen. Aus dem App-Quellcode allein lässt sich dies nicht vollständig feststellen.</p>
+    <h2>Umgang mit Google-Nutzerdaten</h2>
+    <p>Für den öffentlichen Betrieb vorgesehene Regel: Google-Nutzerdaten werden ausschließlich für die offengelegten Funktionen Anmeldung und Sicherung verwendet. Sie werden nicht verkauft, für personalisierte Werbung eingesetzt oder zum Training allgemeiner KI-Modelle verwendet. Weitergaben erfolgen nur für die von dir genutzten Funktionen und unter Beachtung der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich ihrer Anforderungen zur eingeschränkten Nutzung. Diese Betreiberregel ist vor der finalen Freigabe zu bestätigen.</p>
+    <h2>Rechtsgrundlagen</h2>
+    <p>Vor dem öffentlichen Betrieb sind die Rechtsgrundlagen je Verarbeitung festzulegen und hier konkret zu nennen. Dies betrifft insbesondere die Konto- und Serverfunktionen, freiwillige externe Verbindungen und gegebenenfalls die ausdrückliche Einwilligung zur Verarbeitung von Gesundheitsdaten. Eine Google-OAuth-Freigabe allein ersetzt nicht automatisch eine erforderliche datenschutzrechtliche Einwilligung.</p>
+    <h2>Verbindung trennen, Daten löschen und Aufbewahrung</h2>
+    <p>Du kannst eine externe Verbindung in TrainLog trennen und die Freigabe zusätzlich in den Einstellungen des jeweiligen Anbieters widerrufen. Das Trennen entfernt die gespeicherte Verbindung in TrainLog. Bereits angelegte Cloud-Sicherungen, übertragene Strava-Aktivitäten und lokale Trainings werden dadurch nicht automatisch gelöscht.</p>
+    <p>Die Kontolöschung in TrainLog entfernt das Profilkonto. Lokale Trainings und vorhandene Cloud-Dateien bleiben erhalten und müssen gesondert gelöscht werden. Google stellt für den versteckten App-Datenbereich eine Löschmöglichkeit in der Drive-App-Verwaltung bereit. Strava-Aktivitäten und OneDrive-Dateien können beim jeweiligen Anbieter verwaltet werden.</p>
+    <p>Konkrete Fristen für Betriebsprotokolle, Anbieterbackups und sonstige Restdaten sind vor der finalen Freigabe anhand der tatsächlich eingesetzten Dienste zu ergänzen. Es wird hier keine unbelegte vollständige Sofortlöschung zugesichert.</p>
+    <h2>Besuch dieser Website</h2>
+    <p>Diese Website enthält keine Analyse- oder Werbeskripte, keine extern geladenen Schriftarten und keine eigenen Cookies. Beim Hosting über GitHub Pages verarbeitet GitHub technische Verbindungsdaten und speichert IP-Adressen zu Sicherheitszwecken. Details stehen in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+    <h2>Deine Rechte</h2>
+    <p>Soweit die gesetzlichen Voraussetzungen erfüllt sind, stehen dir insbesondere Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu. Erteilte Einwilligungen kannst du für die Zukunft widerrufen. Für Anliegen ist der oben genannte Kontakt vorgesehen. Du kannst dich außerdem an eine Datenschutzaufsichtsbehörde wenden, in Österreich an die <a href="https://www.dsb.gv.at/">Österreichische Datenschutzbehörde</a>.</p>
+  </main>
+  <footer class="site-footer wrap"><span>TrainLog · Datenschutzentwurf</span><a href="index.html">Startseite</a></footer>
+</body>
+</html>
